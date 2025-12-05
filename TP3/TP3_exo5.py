@@ -21,7 +21,9 @@ for i in range(hd,hf):
         cmpt2+=1
 
 print(f"Vous avez loué votre vélo pendant")
-print(f"{cmpt1} heure(s) au tarif horaire de 1.0 euro(s)")
-print(f"{cmpt2} heure(s) au tarif horaire de 2.0 euro(s)")
+if cmpt1 != 0:
+    print(f"{cmpt1} heure(s) au tarif horaire de 1.0 euro(s)")
+if cmpt2 != 0:
+    print(f"{cmpt2} heure(s) au tarif horaire de 2.0 euro(s)")
 somme=cmpt1+2*cmpt2
 print(f"Le montant total à payer est de {somme} euro(s).")
