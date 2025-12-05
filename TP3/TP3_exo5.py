@@ -13,12 +13,15 @@ while hd < 0 or hf < 0 or hd > 24 or hf > 24 or hd == hf or hf < hf:
 
     hd=int(input("Donnez l'heure de début de la location (un entier):"))
     hf=int(input("Donnez l'heure de fin de la location (un entier):"))
-
 for i in range(hd,hf):
     if 0<= i <7 or 17<i<24:
         cmpt1+=1
+
     else:
         cmpt2+=1
 
+print(f"Vous avez loué votre vélo pendant")
+print(f"{cmpt1} heure(s) au tarif horaire de 1.0 euro(s)")
+print(f"{cmpt2} heure(s) au tarif horaire de 2.0 euro(s)")
 somme=cmpt1+2*cmpt2
 print(f"Le montant total à payer est de {somme} euro(s).")
