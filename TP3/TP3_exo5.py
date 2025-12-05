@@ -14,7 +14,7 @@ while hd < 0 or hf < 0 or hd > 24 or hf > 24 or hd == hf or hf < hf:
     hd=int(input("Donnez l'heure de début de la location (un entier):"))
     hf=int(input("Donnez l'heure de fin de la location (un entier):"))
 for i in range(hd,hf):
-    if 0<= i <7 or 17<i<24:
+    if i <7 or 17<=i:
         cmpt1+=1
 
     else:
